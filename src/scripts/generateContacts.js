@@ -11,7 +11,6 @@ export const generateContacts = async (number) => {
     }
     const updatedContacts = [...existingContacts, ...newContacts];
     await writeContacts(updatedContacts);
-    console.log(`Успішно додано ${number} контактів`);
   } catch (error) {
     console.error('Помилка додавання данних до файлу:', error);
   }

@@ -5,4 +5,4 @@ export const countContacts = async () => {
   return contacts.length;
 };
 
-console.log('Усьго контактів:', await countContacts());
+console.log(await countContacts());
